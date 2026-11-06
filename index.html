@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diana Micropigmentación | Belleza natural, confianza real</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-peach: #f4ddc4;
+        --bg-cream: #f7e9d7;
+        --bg-cream-light: #faf1e4;
+        --rose: #c17f87;
+        --rose-dark: #b06d76;
+        --rose-deep: #a5636c;
+        --ink: #3a2a24;
+        --ink-soft: #6b564c;
+        --white: #ffffff;
+        --line: rgba(58, 42, 36, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Jost", sans-serif;
+        color: var(--ink);
+        background: var(--bg-cream-light);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+
+      .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 48px;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--rose-deep);
+        display: block;
+        margin-bottom: 14px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 13px 26px;
+        border-radius: 30px;
+        font-size: 0.82rem;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1.5px solid transparent;
+        transition: transform 0.18s ease, box-shadow 0.18s ease,
+          background 0.18s ease, color 0.18s ease;
+        white-space: nowrap;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 3px;
+      }
+
+      .btn-primary {
+        background: var(--rose);
+        color: var(--white);
+        box-shadow: 0 10px 22px -10px rgba(161, 97, 105, 0.65);
+      }
+      .btn-primary:hover {
+        background: var(--rose-dark);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--rose-deep);
+        border-color: var(--rose);
+      }
+      .btn-outline:hover {
+        background: rgba(193, 127, 135, 0.08);
+      }
+
+      .btn-small {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+      }
+
+      /* ---------- Placeholder de imagen (reemplazar por foto real) ---------- */
+      .ph {
+        position: relative;
+        background: linear-gradient(135deg, #e9c9ab, #d9ab9a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: rgba(255, 255, 255, 0.85);
+        text-align: center;
+      }
+      .ph span {
+        font-family: "Jost", sans-serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+      }
+      .ph::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 30% 20%,
+          rgba(255, 255, 255, 0.18),
+          transparent 60%
+        );
+      }
+
+      /* ================= HEADER ================= */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(250, 241, 228, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .logo-mark {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--white);
+        border: 2px solid var(--rose);
+        box-shadow: 0 8px 18px -8px rgba(161, 97, 105, 0.6);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo-mark svg {
+        width: 18px;
+        height: 18px;
+      }
+      .logo-text {
+        line-height: 1.1;
+      }
+      .logo-text .name {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .logo-text .sub {
+        font-size: 0.6rem;
+        letter-spacing: 2.5px;
+        color: var(--rose-deep);
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 42px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--ink);
+      }
+      .nav-links a {
+        position: relative;
+        padding: 4px 0;
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--rose);
+        transition: width 0.2s ease;
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .nav-cta {
+        display: flex;
+        align-items: center;
+      }
+
+      /* ================= HERO ================= */
+      .hero {
+        background: var(--bg-peach);
+        padding: 70px 0 60px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .hero-copy h1 {
+        font-size: 2.9rem;
+        line-height: 1.12;
+        letter-spacing: -0.5px;
+      }
+      .hero-copy h1 .accent {
+        color: var(--rose);
+        font-style: italic;
+        font-weight: 600;
+      }
+      .hero-copy p {
+        margin-top: 20px;
+        max-width: 430px;
+        color: var(--ink-soft);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        margin-top: 30px;
+      }
+      .hero-badges {
+        display: flex;
+        gap: 32px;
+        margin-top: 46px;
+        flex-wrap: wrap;
+      }
+      .hero-badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: var(--ink);
+      }
+      .hero-badge .ico {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(193, 127, 135, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--rose-deep);
+        flex-shrink: 0;
+      }
+      .hero-badge .ico svg {
+        width: 15px;
+        height: 15px;
+      }
+
+      .hero-visual {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .hero-photo {
+        width: 100%;
+        aspect-ratio: 4/3.1;
+        border-radius: 22px 22px 22px 90px;
+      }
+      .hero-stem {
+        position: absolute;
+        left: -30px;
+        top: 10%;
+        height: 78%;
+        width: 90px;
+        opacity: 0.85;
+        z-index: 2;
+        pointer-events: none;
+      }
+      .hero-seal {
+        position: absolute;
+        right: 6px;
+        bottom: -40px;
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+        background: var(--white);
+        border: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 14px 30px -14px rgba(58, 42, 36, 0.35);
+        z-index: 3;
+      }
+      .hero-seal-inner {
+        width: 136px;
+        height: 136px;
+        border-radius: 50%;
+        background: #dba0b6;
+        overflow: hidden;
+        position: relative;
+      }
+      .hero-seal-inner video {
+        position: absolute;
+        width: 135%;
+        height: 135%;
+        left: calc(50% - 48.4% * 1.35);
+        top: calc(50% - 61.3% * 1.35);
+        max-width: none;
+      }
+
+      /* ================= SERVICES ================= */
+      .services {
+        background: var(--bg-peach);
+        padding: 70px 0 90px;
+        text-align: center;
+      }
+      .services h2 {
+        font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+        line-height: 1.15;
+        margin-top: 4px;
+      }
+      .services h2 .heart {
+        color: var(--rose);
+        font-style: normal;
+      }
+      .services-sub {
+        text-align: center;
+      }
+
+      .service-grid {
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+        text-align: left;
+      }
+      .service-card {
+        background: var(--white);
+        border-radius: 18px;
+        padding: 16px 16px 22px;
+        box-shadow: 0 18px 36px -26px rgba(58, 42, 36, 0.45);
+      }
+      .service-card .thumb {
+        width: 100%;
+        aspect-ratio: 1/0.82;
+        border-radius: 12px;
+        margin-bottom: 18px;
+        position: relative;
+      }
+      .service-card .thumb .icon-badge {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--rose-deep);
+      }
+      .service-card h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+      }
+      .service-card p {
+        margin-top: 10px;
+        font-size: 0.83rem;
+        color: var(--ink-soft);
+        line-height: 1.55;
+      }
+      .service-card .price {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 6px 16px;
+        border-radius: 30px;
+        background: rgba(193, 127, 135, 0.14);
+        border: 1px solid rgba(193, 127, 135, 0.35);
+        font-family: "Playfair Display", serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--rose-deep);
+        letter-spacing: 0.3px;
+      }
+      .service-card .link {
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.76rem;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        color: var(--rose-deep);
+        text-transform: uppercase;
+      }
+      .service-card .link svg {
+        width: 13px;
+        height: 13px;
+        transition: transform 0.18s ease;
+      }
+      .service-card:hover .link svg {
+        transform: translateX(4px);
+      }
+
+      /* ================= ABOUT ================= */
+      .about {
+        background: var(--bg-peach);
+        padding: 0 0 0;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+      }
+      .about-photo {
+        min-height: 480px;
+      }
+      .about-copy {
+        padding: 64px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .about-copy h2 {
+        font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+        line-height: 1.15;
+      }
+      .about-copy p {
+        margin-top: 18px;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 480px;
+      }
+      .about-features {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 26px;
+        max-width: 480px;
+      }
+      .about-feature {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.82rem;
+        font-weight: 500;
+      }
+      .about-feature .ico {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(193, 127, 135, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--rose-deep);
+        flex-shrink: 0;
+      }
+      .about-feature .ico svg {
+        width: 13px;
+        height: 13px;
+      }
+      .about-copy .btn {
+        margin-top: 32px;
+        align-self: flex-start;
+      }
+
+      /* ================= RESULTS ================= */
+      .results {
+        background: var(--bg-cream);
+        padding: 70px 0 60px;
+        text-align: center;
+      }
+      .results h2 {
+        font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+        line-height: 1.15;
+        margin-top: 4px;
+      }
+      .results-grid {
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+      }
+      .result-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 18px 34px -26px rgba(58, 42, 36, 0.4);
+      }
+      .result-pair .cell {
+        position: relative;
+        aspect-ratio: 1/1;
+      }
+      .result-pair .tag {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        background: rgba(58, 42, 36, 0.55);
+        color: #fff;
+        font-size: 0.62rem;
+        letter-spacing: 1px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+      }
+
+      /* ================= CTA BANNER ================= */
+      .cta-banner {
+        background: var(--rose-deep);
+        color: #fff;
+        padding: 26px 0;
+      }
+      .cta-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      .cta-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .cta-left .ico {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.16);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .cta-left .ico svg {
+        width: 20px;
+        height: 20px;
+      }
+      .cta-left h3 {
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 600;
+      }
+      .cta-left p {
+        font-size: 0.82rem;
+        opacity: 0.88;
+        margin-top: 2px;
+      }
+      .cta-banner .btn-primary {
+        background: #fff;
+        color: var(--rose-deep);
+        box-shadow: none;
+      }
+      .cta-banner .btn-primary:hover {
+        background: #f7e9e0;
+      }
+
+      /* ================= GALLERY STRIP ================= */
+      .gallery-strip {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4px;
+      }
+      .gallery-strip .g {
+        aspect-ratio: 1/1.02;
+      }
+
+      /* ================= FOOTER ================= */
+      footer {
+        background: var(--bg-cream-light);
+        padding: 54px 0 34px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 30px;
+      }
+      .footer-brand .logo {
+        margin-bottom: 14px;
+      }
+      .footer-brand p {
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+        max-width: 260px;
+        line-height: 1.6;
+      }
+      footer h4 {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--rose-deep);
+        margin-bottom: 16px;
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+      }
+      footer .links li {
+        margin-bottom: 10px;
+      }
+      footer .links a {
+        font-size: 0.87rem;
+        color: var(--ink-soft);
+        transition: color 0.18s ease;
+      }
+      footer .links a:hover {
+        color: var(--rose-deep);
+      }
+      .footer-contact {
+        text-align: right;
+      }
+      .footer-contact .social {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.87rem;
+        color: var(--ink-soft);
+        margin-top: 4px;
+      }
+      .footer-contact .social svg {
+        width: 16px;
+        height: 16px;
+        color: var(--rose-deep);
+      }
+
+      /* ================= RESPONSIVE ================= */
+      @media (max-width: 980px) {
+        .container {
+          padding: 0 26px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-copy h1 {
+          font-size: 2.3rem;
+        }
+        .hero-visual {
+          order: -1;
+        }
+        .service-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .about-photo {
+          min-height: 320px;
+        }
+        .about-copy {
+          padding: 44px 30px;
+        }
+        .results-grid {
+          grid-template-columns: 1fr;
+        }
+        .gallery-strip {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-contact {
+          text-align: left;
+          grid-column: 1/-1;
+        }
+      }
+      @media (max-width: 560px) {
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-badges {
+          gap: 18px;
+        }
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+        .cta-inner {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .gallery-strip {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .logo-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .ph > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .qr-box {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: #fff;
+        border-radius: 16px;
+        padding: 12px 16px;
+        color: var(--ink);
+      }
+      #qr-code {
+        width: 104px;
+        height: 104px;
+        flex-shrink: 0;
+      }
+      #qr-code img,
+      #qr-code canvas {
+        width: 104px !important;
+        height: 104px !important;
+      }
+      .qr-box p {
+        font-size: 0.8rem;
+        line-height: 1.35;
+        max-width: 130px;
+      }
+      .qr-box strong {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 0.95rem;
+        margin-bottom: 2px;
+      }
+      @media (max-width: 560px) {
+        .qr-box {
+          display: none;
+        }
+      }
+
+      /* ===== PANTALLA DE ENTRADA (logo animado) ===== */
+      html.intro-lock {
+        overflow: hidden;
+      }
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 100000;
+        background: #dba0b6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.7s ease, visibility 0.7s ease;
+      }
+      #intro.hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      #intro video {
+        width: min(78vmin, 460px);
+        height: min(78vmin, 460px);
+        transform: translate(1.6%, -11.3%);
+        -webkit-mask-image: radial-gradient(
+          circle closest-side,
+          #000 86%,
+          transparent 100%
+        );
+        mask-image: radial-gradient(
+          circle closest-side,
+          #000 86%,
+          transparent 100%
+        );
+      }
+      #intro-skip {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background: rgba(255, 255, 255, 0.85);
+        color: var(--rose-deep);
+        border: 0;
+        border-radius: 30px;
+        padding: 9px 20px;
+        font: 500 0.8rem "Jost", sans-serif;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+      }
+      #intro-skip:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro" aria-hidden="true">
+      <video
+        id="intro-video"
+        src="logo-intro.mp4"
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+      <button id="intro-skip" type="button">Saltar</button>
+    </div>
+    <script>
+      (function () {
+        var skip = false;
+        try {
+          skip =
+            sessionStorage.getItem("introVista") === "1" ||
+            (window.matchMedia &&
+              matchMedia("(prefers-reduced-motion: reduce)").matches);
+        } catch (e) {}
+        var el = document.getElementById("intro");
+        if (skip) {
+          el.parentNode.removeChild(el);
+        } else {
+          document.documentElement.classList.add("intro-lock");
+        }
+      })();
+    </script>
+    <header>
+      <div class="container nav">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+            <img
+              src="https://i.ibb.co/TB2wBhMB/Micropigmentacion.png"
+              alt="Logo Diana Micropigmentación"
+            />
+          </span>
+          <span class="logo-text">
+            <span class="name">Diana</span><br />
+            <span class="sub">MICROPIGMENTACIÓN</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>
+              Belleza natural,<br /><span class="accent">confianza real.</span>
+              ♡
+            </h1>
+            <p>
+              Especialistas en micropigmentación de cejas, labios y pestañas
+              para realzar tu belleza de forma sutil y duradera.
+            </p>
+            <div class="hero-actions">
+              <a href="#resultados" class="btn btn-outline">VER TRABAJOS</a>
+            </div>
+            <div class="hero-badges">
+              <div class="hero-badge">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="15"
+                    height="15"
+                  >
+                    <circle cx="12" cy="9" r="6" />
+                    <path d="M9 14 7 22l5-3 5 3-2-8" /></svg
+                ></span>
+                Técnicas Seguras
+              </div>
+              <div class="hero-badge">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="15"
+                    height="15"
+                  >
+                    <path d="M9 12l2 2 4-4" />
+                    <circle cx="12" cy="12" r="9" /></svg
+                ></span>
+                Alta calidad
+              </div>
+              <div class="hero-badge">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="15"
+                    height="15"
+                  >
+                    <path
+                      d="M12 21s-7-4.35-9.5-8.8C1 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21 8.5 20 12.2 18.5 16.65 12 21 12 21z"
+                    /></svg
+                ></span>
+                Resultados Naturales
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <svg
+              class="hero-stem"
+              viewBox="0 0 90 300"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M45 10 L45 290"
+                stroke="#fff"
+                stroke-width="1.5"
+                opacity="0.7"
+              />
+              <g fill="#faf6ee" opacity="0.9">
+                <circle cx="30" cy="40" r="5" />
+                <circle cx="60" cy="55" r="5" />
+                <circle cx="25" cy="80" r="5" />
+                <circle cx="62" cy="95" r="5" />
+                <circle cx="30" cy="130" r="5" />
+                <circle cx="58" cy="145" r="5" />
+                <circle cx="26" cy="175" r="5" />
+                <circle cx="60" cy="190" r="5" />
+              </g>
+            </svg>
+            <div class="hero-photo ph">
+              <img
+                src="https://i.ibb.co/Kx0QCypD/ojos.jpg"
+                alt="Micropigmentación de cejas"
+              />
+            </div>
+            <div class="hero-seal">
+              <div class="hero-seal-inner">
+                <video
+                  id="seal-video"
+                  src="logo-intro.mp4"
+                  muted
+                  playsinline
+                  preload="auto"
+                  aria-label="Logo animado de Diana Micropigmentación"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICIOS ================= -->
+      <section class="services" id="servicios">
+        <div class="container">
+          <span class="eyebrow">NUESTROS SERVICIOS</span>
+          <h2>Realzamos tu belleza natural. <span class="heart">♡</span></h2>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="thumb ph">
+                <img
+                  src="https://i.ibb.co/TqRhfmKr/microcejas.jpg"
+                  alt="Micropigmentación de cejas"
+                />
+              </div>
+
+              <h3>Micropigmentación de Cejas</h3>
+              <p>
+                Diseño personalizado para lograr cejas perfectas y naturales.
+              </p>
+              <span class="price">$350.000</span>
+              <a href="#" class="link" data-agendar="servicios"
+                >MÁS INFORMACIÓN
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="thumb ph">
+                <img
+                  src="https://i.ibb.co/HRRrXv9/labio.jpg"
+                  alt="Micropigmentación de labios"
+                />
+              </div>
+
+              <h3>Micropigmentación de Labios</h3>
+              <p>Color y definición que realzan la belleza de tus labios.</p>
+              <span class="price">$350.000</span>
+              <a href="#" class="link" data-agendar="servicios"
+                >MÁS INFORMACIÓN
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="thumb ph">
+                <img
+                  src="https://i.ibb.co/C35D8MCH/dise-o-cejas.jpg"
+                  alt="Diseño y laminado de cejas"
+                />
+              </div>
+
+              <h3>Diseño y laminado de cejas</h3>
+              <p>Cejas definidas, alineadas y con un acabado perfecto.</p>
+              <span class="price">$90.000</span>
+              <a href="#" class="link" data-agendar="servicios"
+                >MÁS INFORMACIÓN
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="thumb ph">
+                <img
+                  src="https://i.ibb.co/d4bdwNMB/ojo.jpg"
+                  alt="Realce de pestañas"
+                />
+              </div>
+
+              <h3>Realce de pestañas</h3>
+              <p>Pestañas definidas, alineadas y con un acabado perfecto.</p>
+              <span class="price">$80.000</span>
+              <a href="#" class="link" data-agendar="servicios"
+                >MÁS INFORMACIÓN
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SOBRE MÍ ================= -->
+      <section class="about" id="sobre-mi">
+        <div class="about-grid">
+          <div class="about-photo ph">
+            <img
+              src="https://i.ibb.co/QFwzNMd5/diana.jpg"
+              alt="Diana, micropigmentadora profesional"
+            />
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">SOBRE MÍ</span>
+            <h2>Diana Micropigmentadora Profesional</h2>
+            <p>
+              Soy especialista en realzar la belleza natural de cada persona a
+              través de técnicas de micropigmentación seguras, modernas y
+              personalizadas. Mi compromiso es brindar resultados armónicos,
+              duraderos y que hagan sentir segura y confiada.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="13"
+                    height="13"
+                  >
+                    <circle cx="12" cy="8" r="5" />
+                    <path d="M8 13 6 22l6-4 6 4-2-9" /></svg
+                ></span>
+                Certificaciones internacionales
+              </div>
+              <div class="about-feature">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="13"
+                    height="13"
+                  >
+                    <path d="M9 12l2 2 4-4" />
+                    <circle cx="12" cy="12" r="9" /></svg
+                ></span>
+                Técnicas seguras y de alta calidad
+              </div>
+              <div class="about-feature">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="13"
+                    height="13"
+                  >
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 21c1-4 4.5-6 8-6s7 2 8 6" /></svg
+                ></span>
+                Atención personalizada
+              </div>
+              <div class="about-feature">
+                <span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    width="13"
+                    height="13"
+                  >
+                    <path
+                      d="M12 21s-7-4.35-9.5-8.8C1 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21 8.5 20 12.2 18.5 16.65 12 21 12 21z"
+                    /></svg
+                ></span>
+                Atención personalizada
+              </div>
+            </div>
+
+            <a href="#contacto" class="btn btn-primary">CONOCE MÁS SOBRE MÍ</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= RESULTADOS ================= -->
+      <section class="results" id="resultados">
+        <div class="container">
+          <span class="eyebrow">RESULTADOS REALES</span>
+          <h2>Antes &nbsp; y &nbsp; después</h2>
+
+          <div class="results-grid">
+            <div class="result-pair">
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/n8qPrMHj/antes-cejas.jpg"
+                  alt="Antes"
+                />
+                <span class="tag">ANTES</span>
+              </div>
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/W4MPxMfY/despues-cejas.jpg"
+                  alt="Después"
+                />
+                <span class="tag">DESPUÉS</span>
+              </div>
+            </div>
+            <div class="result-pair">
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/0j7mYRB8/antes-labios.jpg"
+                  alt="Antes"
+                />
+                <span class="tag">ANTES</span>
+              </div>
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/ZZhHrVn/despues-labios.jpg"
+                  alt="Después"
+                />
+                <span class="tag">DESPUÉS</span>
+              </div>
+            </div>
+            <div class="result-pair">
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/qFhkLNKK/ojos-antes.png"
+                  alt="Antes"
+                />
+                <span class="tag">ANTES</span>
+              </div>
+              <div class="cell ph">
+                <img
+                  src="https://i.ibb.co/fVDHXgCH/ojos-despues.png"
+                  alt="Después"
+                />
+                <span class="tag">DESPUÉS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container cta-inner">
+          <div class="cta-left">
+            <span class="ico"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.8"
+                width="20"
+                height="20"
+              >
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M3 10h18M8 3v4M16 3v4" /></svg
+            ></span>
+            <div>
+              <h3>¿Lista para realzar tu belleza?</h3>
+              <p>Agenda tu cita y luce tu mejor versión.</p>
+            </div>
+          </div>
+          <div class="qr-box">
+            <div
+              id="qr-code"
+              role="img"
+              aria-label="Código QR para agendar tu cita"
+            ></div>
+            <p><strong>Escanea y agenda</strong>desde tu celular</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GALERÍA ================= -->
+      <div class="gallery-strip">
+        <div class="g ph">
+          <img
+            src="https://i.ibb.co/xTs2c9W/Chat-GPT-Image-23-ago-2026-11-33-37-p-m.png"
+            alt=""
+          />
+        </div>
+        <div class="g ph">
+          <img
+            src="https://i.ibb.co/qYsxDPXW/Chat-GPT-Image-23-ago-2026-23-40-37.png"
+            alt=""
+          />
+        </div>
+        <div class="g ph">
+          <img
+            src="https://i.ibb.co/GByhHh2/Chat-GPT-Image-23-ago-2026-23-46-28.png"
+            alt=""
+          />
+        </div>
+        <div class="g ph">
+          <img
+            src="https://i.ibb.co/tMHyPQgH/Chat-GPT-Image-23-ago-2026-23-48-44.png"
+            alt=""
+          />
+        </div>
+        <div class="g ph">
+          <img
+            src="https://i.ibb.co/w18X7JD/Chat-GPT-Image-23-ago-2026-23-50-31.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacto">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-mark">
+              <img
+                src="https://i.ibb.co/TB2wBhMB/Micropigmentacion.png"
+                alt="Logo Diana Micropigmentación"
+              />
+            </span>
+            <span class="logo-text">
+              <span class="name">Diana</span><br />
+              <span class="sub">MICROPIGMENTACIÓN</span>
+            </span>
+          </a>
+          <p>Belleza y confianza en cada detalle.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Enlaces</h4>
+          <ul class="links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <span class="social">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg>
+            dianacruces_micropigmentacion
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== CHAT DE AGENDA (ANA) ===== -->
+    <style>
+      #dc-chat,
+      #dc-chat * {
+        box-sizing: border-box;
+      }
+      #dc-chat {
+        --rose: #a5636c;
+        --rose-d: #8e525a;
+        --ink: #3a2a24;
+        --peach: #f4ddc4;
+        --paper: #faf1e4;
+        --line: rgba(58, 42, 36, 0.14);
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 99999;
+        font-family: "Jost", system-ui, sans-serif;
+        color: var(--ink);
+      }
+      #dc-open {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--rose);
+        color: #fff;
+        border: 0;
+        border-radius: 40px;
+        padding: 7px 22px 7px 7px;
+        font: 500 14px "Jost", system-ui, sans-serif;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        box-shadow: 0 10px 22px -8px rgba(161, 97, 105, 0.7);
+      }
+      #dc-open[hidden] {
+        display: none;
+      }
+      #dc-open:hover {
+        background: var(--rose-d);
+      }
+      #dc-open img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        background: #fff;
+        flex-shrink: 0;
+      }
+      #dc-panel {
+        width: 360px;
+        max-width: calc(100vw - 24px);
+        height: 520px;
+        max-height: calc(100vh - 36px);
+        display: flex;
+        flex-direction: column;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 18px 44px -12px rgba(58, 42, 36, 0.4);
+      }
+      #dc-panel[hidden] {
+        display: none;
+      }
+      #dc-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 16px;
+        background: var(--rose);
+        color: #fff;
+      }
+      .dc-who {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .dc-who img {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        background: #fff;
+        flex-shrink: 0;
+      }
+      #dc-head b {
+        display: block;
+        font: 600 19px "Playfair Display", Georgia, serif;
+        color: #fff;
+        line-height: 1.1;
+      }
+      #dc-head small {
+        display: block;
+        font: 400 12px "Jost", system-ui, sans-serif;
+        opacity: 0.92;
+        margin-top: 2px;
+      }
+      #dc-close {
+        background: none;
+        border: 0;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        cursor: pointer;
+      }
+      #dc-log {
+        flex: 1;
+        overflow-y: auto;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .dc-m {
+        max-width: 86%;
+        padding: 9px 13px;
+        border-radius: 16px;
+        font-size: 15px;
+        line-height: 1.45;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      .dc-bot {
+        align-self: flex-start;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-bottom-left-radius: 4px;
+      }
+      .dc-user {
+        align-self: flex-end;
+        background: var(--rose);
+        color: #fff;
+        border-bottom-right-radius: 4px;
+      }
+      .dc-chips {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .dc-chip {
+        background: #fff;
+        border: 1px solid var(--rose);
+        color: var(--rose-d);
+        border-radius: 14px;
+        padding: 7px 13px;
+        font: 400 14px "Jost", system-ui, sans-serif;
+        cursor: pointer;
+        text-align: left;
+      }
+      .dc-chip:hover {
+        background: var(--peach);
+      }
+      .dc-card {
+        align-self: stretch;
+        background: var(--peach);
+        border-radius: 14px;
+        padding: 12px 14px;
+        font-size: 14px;
+      }
+      .dc-card a {
+        display: inline-block;
+        margin-top: 8px;
+        background: var(--rose);
+        color: #fff;
+        border-radius: 30px;
+        padding: 9px 20px;
+        font-weight: 500;
+      }
+      #dc-form {
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        border-top: 1px solid var(--line);
+        background: #fff;
+      }
+      #dc-in {
+        flex: 1;
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        padding: 10px 14px;
+        font: 400 15px "Jost", system-ui, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+      #dc-send {
+        background: var(--rose);
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+        padding: 0 16px;
+        font: 500 14px "Jost", system-ui, sans-serif;
+        cursor: pointer;
+      }
+      #dc-open:focus-visible,
+      #dc-send:focus-visible,
+      #dc-in:focus-visible,
+      .dc-chip:focus-visible,
+      #dc-close:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+      }
+    </style>
+
+    <div id="dc-chat">
+      <button id="dc-open" type="button">
+        <img
+          src="https://i.ibb.co/xq5BM868/Whats-App-Image-2026-11-06-at-4-18-26-PM.jpg"
+          alt="Ana, asistente virtual"
+        />
+        HABLA CON ANA
+      </button>
+      <section id="dc-panel" hidden aria-label="Chat con Ana, asistente de Diana">
+        <div id="dc-head">
+          <div class="dc-who">
+            <img
+              src="https://i.ibb.co/xq5BM868/Whats-App-Image-2026-11-06-at-4-18-26-PM.jpg"
+              alt="Ana, asistente virtual"
+            />
+            <div>
+              <b>Ana</b>
+              <small>Asistente de Diana ♡</small>
+            </div>
+          </div>
+          <button id="dc-close" type="button" aria-label="Cerrar chat">
+            ×
+          </button>
+        </div>
+        <div id="dc-log" aria-live="polite"></div>
+        <form id="dc-form">
+          <input
+            id="dc-in"
+            placeholder="Escribe lo que necesitas..."
+            autocomplete="off"
+          /><button id="dc-send" type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      (function () {
+        // ---- ENLACES DE RESERVA ----
+        var LINK_MICRO = "https://calendar.app.google/FJV7e5VNkmvkYc5N8";
+        var LINK_DISENO = "https://koalendar.com/e/diseno-cejas-pestanas";
+
+        // ---- CONTACTO DIRECTO CON DIANA ----
+        var TEL_TEXTO = "+57 3128500401";
+        var LINK_WA = "https://wa.me/573128500401";
+
+        // ---- TEXTOS DE ANA ----
+        var R = {
+          servicios:
+            "¡Claro que sí! Estos son nuestros servicios y sus precios ♡\n• Micropigmentación de cejas: $350.000\n• Micropigmentación de labios: $350.000\n• Diseño y laminado de cejas: $90.000\n• Realce de pestañas: $80.000\n\nMicropigmentación: lunes, jueves y viernes.\nDiseño, laminado y pestañas: martes, miércoles y sábado.\nLos domingos no se atiende.",
+          cuidados:
+            "Después del procedimiento: mantén la zona limpia y seca, no la mojes las primeras 24 horas, no rasques las costras y usa protector solar ♡\nSi tienes dudas sobre tu caso, Diana te orienta en tu cita o puedes escribirle al " +
+            TEL_TEXTO +
+            ".",
+          contra:
+            "No se recomienda durante embarazo o lactancia ni con infecciones en la piel. Si tienes diabetes, problemas de coagulación o tendencia a queloides, lo mejor es consultarlo antes con Diana. Puedes escribirle al " +
+            TEL_TEXTO +
+            " y ella te orienta con gusto ♡",
+          precios:
+            "Con mucho gusto te cuento los precios ♡\n• Micropigmentación de cejas: $350.000\n• Micropigmentación de labios: $350.000\n• Diseño y laminado de cejas: $90.000\n• Realce de pestañas: $80.000\n\nSi quieres resolver alguna duda sobre tu caso, Diana te atiende al " +
+            TEL_TEXTO +
+            ".",
+        };
+
+        var MENU = [
+          ["Agendar una cita", "agendar"],
+          ["Servicios y precios", "servicios"],
+          ["Cuidados posteriores", "cuidados"],
+          ["Contraindicaciones", "contra"],
+          ["Hablar con Diana", "contacto"],
+        ];
+
+        var $ = function (id) {
+          return document.getElementById(id);
+        };
+        var log = $("dc-log"),
+          input = $("dc-in"),
+          panel = $("dc-panel"),
+          openBtn = $("dc-open"),
+          started = false;
+
+        function norm(s) {
+          return s
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+        }
+        function clearChips() {
+          var c = log.querySelector(".dc-chips");
+          if (c) c.remove();
+        }
+        function scroll() {
+          log.scrollTop = log.scrollHeight;
+        }
+        function say(text, cls) {
+          var d = document.createElement("div");
+          d.className = "dc-m " + (cls || "dc-bot");
+          d.textContent = text;
+          log.appendChild(d);
+          scroll();
+        }
+        function chips(list) {
+          clearChips();
+          var w = document.createElement("div");
+          w.className = "dc-chips";
+          list.forEach(function (it) {
+            var b = document.createElement("button");
+            b.type = "button";
+            b.className = "dc-chip";
+            b.textContent = it[0];
+            b.addEventListener("click", function () {
+              say(it[0], "dc-user");
+              act(it[1]);
+            });
+            w.appendChild(b);
+          });
+          log.appendChild(w);
+          scroll();
+        }
+        function book(url, texto) {
+          clearChips();
+          var c = document.createElement("div");
+          c.className = "dc-card";
+          c.appendChild(
+            document.createTextNode(
+              texto + " Elige un horario disponible y tu cita queda agendada ♡"
+            )
+          );
+          c.appendChild(document.createElement("br"));
+          var a = document.createElement("a");
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = "Reservar mi cita";
+          c.appendChild(a);
+          log.appendChild(c);
+          scroll();
+          chips([
+            ["Ver otros servicios", "agendar"],
+            ["Hablar con Diana", "contacto"],
+            ["Volver al menú", "menu"],
+          ]);
+        }
+        // Pasa el número de Diana para resolver dudas
+        function contact(texto) {
+          clearChips();
+          say(
+            texto ||
+              "Con gusto ♡ Para resolver tus dudas, Diana te atiende directamente."
+          );
+          var c = document.createElement("div");
+          c.className = "dc-card";
+          c.appendChild(document.createTextNode("Número de Diana: "));
+          var b = document.createElement("b");
+          b.textContent = TEL_TEXTO;
+          c.appendChild(b);
+          c.appendChild(document.createElement("br"));
+          var a = document.createElement("a");
+          a.href = LINK_WA;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = "Escribirle a Diana";
+          c.appendChild(a);
+          log.appendChild(c);
+          scroll();
+          chips([
+            ["Agendar una cita", "agendar"],
+            ["Volver al menú", "menu"],
+          ]);
+        }
+        function menu() {
+          say("¿En qué te puedo ayudar?");
+          chips(MENU);
+        }
+        function act(k) {
+          if (k === "agendar") {
+            say("¡Qué lindo! ¿Qué servicio quieres agendar?");
+            chips([
+              ["Micropigmentación de cejas o labios", "micro"],
+              ["Diseño y laminado de cejas / Realce de pestañas", "diseno"],
+            ]);
+          } else if (k === "micro") {
+            book(
+              LINK_MICRO,
+              "Micropigmentación de cejas y labios: lunes, jueves y viernes."
+            );
+          } else if (k === "diseno") {
+            book(
+              LINK_DISENO,
+              "Diseño y laminado de cejas y realce de pestañas: martes, miércoles y sábado."
+            );
+          } else if (k === "contacto") {
+            contact();
+          } else if (R[k]) {
+            say(R[k]);
+            chips([
+              ["Agendar una cita", "agendar"],
+              ["Hablar con Diana", "contacto"],
+              ["Volver al menú", "menu"],
+            ]);
+          } else {
+            menu();
+          }
+        }
+        function route(t) {
+          t = norm(t);
+          if (/whatsapp|telefono|numero|llamar|celular|contacto|hablar con|diana/.test(t))
+            return "contacto";
+          if (/precio|costo|cuanto|valor|tarifa/.test(t)) return "precios";
+          if (/micro|labio/.test(t)) return "micro";
+          if (/lamin|diseno|pestan/.test(t)) return "diseno";
+          if (/agend|cita|reserv/.test(t)) return "agendar";
+          if (/horario|dia|servicio|atienden/.test(t)) return "servicios";
+          if (/cuidad|despues/.test(t)) return "cuidados";
+          if (/embaraz|contra|diabet|lactan/.test(t)) return "contra";
+          if (/ceja/.test(t)) return "agendar";
+          return "";
+        }
+
+        // Abre el chat. Con una opción ("agendar", "micro" o "diseno") salta directo a ella.
+        window.dcOpen = function (k) {
+          panel.hidden = false;
+          openBtn.hidden = true;
+          if (!started) {
+            started = true;
+            say(
+              "¡Hola! Soy Ana, la asistente de Diana ♡ Te ayudo a reservar tu cita y a resolver tus dudas sobre nuestros servicios."
+            );
+            if (!k) menu();
+          }
+          if (k) act(k);
+          input.focus();
+        };
+
+        openBtn.addEventListener("click", function () {
+          window.dcOpen();
+        });
+        $("dc-close").addEventListener("click", function () {
+          panel.hidden = true;
+          openBtn.hidden = false;
+        });
+        $("dc-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var t = input.value.trim();
+          if (!t) return;
+          say(t, "dc-user");
+          input.value = "";
+          var k = route(t);
+          if (k) {
+            act(k);
+          } else {
+            contact(
+              "Mmm, no estoy segura de haberte entendido bien, pero no te preocupes ♡ Diana te puede ayudar directamente con tu duda."
+            );
+          }
+        });
+        // Cualquier botón de la página con data-agendar abre el chat
+        document.addEventListener("click", function (e) {
+          var t = e.target.closest("[data-agendar]");
+          if (!t) return;
+          e.preventDefault();
+          window.dcOpen(t.getAttribute("data-agendar"));
+        });
+        // QR: apunta a esta misma página con #agendar, que abre el chat
+        var qrBox = $("qr-code");
+        var chatUrl = location.href.split("#")[0] + "#agendar";
+        if (qrBox && window.QRCode) {
+          new QRCode(qrBox, {
+            text: chatUrl,
+            width: 104,
+            height: 104,
+            colorDark: "#3a2a24",
+            colorLight: "#ffffff",
+          });
+        }
+        if (location.hash === "#agendar") {
+          window.dcOpen("agendar");
+        }
+        window.addEventListener("hashchange", function () {
+          if (location.hash === "#agendar") window.dcOpen("agendar");
+        });
+      })();
+    </script>
+
+    <script>
+      (function () {
+        var intro = document.getElementById("intro");
+        var seal = document.getElementById("seal-video");
+        var sealStarted = false;
+
+        // Iguala el fondo de la pantalla y del sello al color exacto del video
+        function matchColor(v) {
+          try {
+            var c = document.createElement("canvas");
+            c.width = c.height = 1;
+            var x = c.getContext("2d");
+            x.drawImage(v, 0, 0, 1, 1);
+            var d = x.getImageData(0, 0, 1, 1).data;
+            var col = "rgb(" + d[0] + "," + d[1] + "," + d[2] + ")";
+            if (intro) intro.style.background = col;
+            if (seal && seal.parentNode) seal.parentNode.style.background = col;
+          } catch (e) {}
+        }
+        [document.getElementById("intro-video"), seal].forEach(function (v) {
+          if (!v) return;
+          if (v.readyState >= 2) matchColor(v);
+          else
+            v.addEventListener(
+              "loadeddata",
+              function () {
+                matchColor(v);
+              },
+              { once: true }
+            );
+        });
+
+        function startSeal() {
+          if (!seal || sealStarted) return;
+          sealStarted = true;
+          function play() {
+            var p = seal.play();
+            if (p && p.catch) p.catch(function () {});
+          }
+          seal.addEventListener("ended", function () {
+            setTimeout(function () {
+              seal.currentTime = 0;
+              play();
+            }, 5000);
+          });
+          seal.addEventListener("click", function () {
+            seal.currentTime = 0;
+            play();
+          });
+          play();
+        }
+
+        if (!intro) {
+          startSeal();
+          return;
+        }
+
+        var video = document.getElementById("intro-video");
+        var closed = false;
+        function closeIntro() {
+          if (closed) return;
+          closed = true;
+          try {
+            sessionStorage.setItem("introVista", "1");
+          } catch (e) {}
+          intro.classList.add("hide");
+          document.documentElement.classList.remove("intro-lock");
+          startSeal();
+          setTimeout(function () {
+            if (intro.parentNode) intro.parentNode.removeChild(intro);
+          }, 800);
+        }
+        document
+          .getElementById("intro-skip")
+          .addEventListener("click", closeIntro);
+        video.addEventListener("ended", function () {
+          setTimeout(closeIntro, 400);
+        });
+        video.addEventListener("error", closeIntro);
+        setTimeout(closeIntro, 7500);
+        var p = video.play();
+        if (p && p.catch) p.catch(closeIntro);
+      })();
+    </script>
+  </body>
+</html>
